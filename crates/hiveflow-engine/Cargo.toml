@@ -1,0 +1,16 @@
+[package]
+name    = "hiveflow-engine"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hiveflow-core        = { path = "../hiveflow-core" }
+hiveflow-connections = { path = "../hiveflow-connections" }
+hiveflow-metadata    = { path = "../hiveflow-metadata" }
+arrow                = { workspace = true }
+parquet              = { workspace = true }
+datafusion           = { workspace = true }
+rayon                = { workspace = true }
+tokio                = { workspace = true }
+tracing              = { workspace = true }
+thiserror            = { workspace = true }

@@ -1,0 +1,13 @@
+[package]
+name    = "hiveflow-metadata"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hiveflow-core        = { path = "../hiveflow-core" }
+hiveflow-connections = { path = "../hiveflow-connections" }
+sqlx                 = { workspace = true }
+tokio                = { workspace = true }
+chrono               = { workspace = true }
+tracing              = { workspace = true }
+thiserror            = { workspace = true }

@@ -1,0 +1,39 @@
+[workspace]
+members = [
+    "crates/hiveflow-core",
+    "crates/hiveflow-connections",
+    "crates/hiveflow-metadata",
+    "crates/hiveflow-engine",
+    "crates/hiveflow-orchestrator",
+    "crates/hiveflow-security",
+    "crates/hiveflow-cli",
+]
+resolver = "2"
+
+[workspace.dependencies]
+tokio       = { version = "1.37", features = ["full"] }
+arrow       = { version = "51.0", features = ["prettyprint", "ipc"] }
+parquet     = { version = "51.0", features = ["arrow", "snap"] }
+datafusion  = "37.0"
+sqlx        = { version = "0.7", features = ["runtime-tokio", "tls-rustls", "postgres", "mysql", "chrono", "uuid"] }
+serde       = { version = "1.0", features = ["derive"] }
+serde_json  = "1.0"
+chrono      = { version = "=0.4.38", features = ["serde"] }
+uuid        = { version = "1.8", features = ["v4", "serde"] }
+tracing     = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+bcrypt      = "0.15"
+thiserror   = "1.0"
+anyhow      = "1.0"
+clap        = { version = "4.5", features = ["derive", "env"] }
+rayon       = "1.10"
+sha2        = "0.10"
+hex         = "0.4"
+config      = "0.14"
+dotenvy     = "0.15"
+
+[profile.release]
+opt-level   = 3
+lto         = "thin"
+codegen-units = 1
+strip       = "symbols"

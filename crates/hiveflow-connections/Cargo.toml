@@ -1,0 +1,11 @@
+[package]
+name    = "hiveflow-connections"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hiveflow-core = { path = "../hiveflow-core" }
+tokio         = { workspace = true }
+sqlx          = { workspace = true }
+tracing       = { workspace = true }
+thiserror     = { workspace = true }

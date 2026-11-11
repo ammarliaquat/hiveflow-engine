@@ -1,0 +1,20 @@
+# Rust target directory
+target/
+
+# Generated files & backups
+**/*.rs.bk
+*.pdb
+*.log
+
+# Environment variables & secrets (Security Invariant)
+.env
+.env.*
+!.env.example
+
+# IDE & OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

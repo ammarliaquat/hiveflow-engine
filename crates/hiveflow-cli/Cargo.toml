@@ -1,0 +1,16 @@
+[package]
+name    = "hiveflow-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hiveflow-core         = { path = "../hiveflow-core" }
+hiveflow-connections  = { path = "../hiveflow-connections" }
+hiveflow-metadata     = { path = "../hiveflow-metadata" }
+hiveflow-engine       = { path = "../hiveflow-engine" }
+hiveflow-orchestrator = { path = "../hiveflow-orchestrator" }
+clap                  = { workspace = true }
+tokio                 = { workspace = true }
+tracing               = { workspace = true }
+tracing-subscriber    = { workspace = true }
+anyhow                = { workspace = true }

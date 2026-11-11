@@ -1,0 +1,12 @@
+[package]
+name    = "hiveflow-security"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hiveflow-core = { path = "../hiveflow-core" }
+bcrypt        = { workspace = true }
+chrono        = { workspace = true }
+uuid          = { workspace = true }
+tracing       = { workspace = true }
+thiserror     = { workspace = true }
