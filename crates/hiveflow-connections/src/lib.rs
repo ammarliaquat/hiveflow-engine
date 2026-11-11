@@ -4,5 +4,4 @@
 
 pub mod manager;
 
-pub use manager::ConnectionManager;
-
+pub use manager::{ConnectionManager, map_sqlx_connection_error};

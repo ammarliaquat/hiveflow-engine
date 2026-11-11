@@ -1488,6 +1488,7 @@ version = "0.1.0"
 dependencies = [
  "arrow",
  "chrono",
+ "parquet",
  "serde",
  "serde_json",
  "sqlx",
@@ -1501,15 +1502,19 @@ name = "hiveflow-engine"
 version = "0.1.0"
 dependencies = [
  "arrow",
+ "chrono",
  "datafusion",
+ "futures",
  "hiveflow-connections",
  "hiveflow-core",
  "hiveflow-metadata",
  "parquet",
  "rayon",
+ "sqlx",
  "thiserror",
  "tokio",
  "tracing",
+ "uuid",
 ]
 
 [[package]]

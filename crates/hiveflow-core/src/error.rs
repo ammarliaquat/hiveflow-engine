@@ -1,4 +1,4 @@
-﻿use thiserror::Error;
+use thiserror::Error;
 
 /// Machine-classified error taxonomy.
 ///
@@ -62,6 +62,9 @@ pub enum HiveFlowError {
 
     #[error("ARROW_ERROR: {0}")]
     Arrow(#[from] arrow::error::ArrowError),
+
+    #[error("PARQUET_ERROR: {0}")]
+    Parquet(#[from] parquet::errors::ParquetError),
 
     #[error("IO_ERROR: {0}")]
     Io(#[from] std::io::Error),

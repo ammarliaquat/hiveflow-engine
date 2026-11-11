@@ -10,5 +10,6 @@ chrono     = { workspace = true }
 uuid       = { workspace = true }
 thiserror  = { workspace = true }
 arrow      = { workspace = true }
+parquet    = { workspace = true }
 sqlx       = { workspace = true }
 tracing    = { workspace = true }
