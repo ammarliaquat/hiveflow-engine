@@ -64,3 +64,4 @@ pub enum ExecutionAuthorityMode {
     Governed,
     Autonomous,
 }
+

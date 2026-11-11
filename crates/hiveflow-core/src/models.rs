@@ -70,3 +70,4 @@ pub struct JobScopeClaim {
     pub lease_expires_at: DateTime<Utc>,
     pub status: String,
 }
+

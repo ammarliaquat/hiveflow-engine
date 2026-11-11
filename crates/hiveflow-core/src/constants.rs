@@ -13,3 +13,4 @@ pub const DEFAULT_BATCH_CHUNK_SIZE: usize = 50_000;
 pub const DEFAULT_STAGE_TIMEOUT_SECS: u64 = 600;
 
 pub const DEFAULT_ENVIRONMENT: &str = "PROD";
+
